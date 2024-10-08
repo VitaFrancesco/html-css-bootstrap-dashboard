@@ -1,0 +1,10 @@
+/* bootstrap dashboard */
+.bd_bg-black{
+    --bd-bg-black: #212529;
+    background-color: var(--bd-bg-black);
+}
+
+.bd_logo{
+    height: 60px;
+    max-width: 100%;
+}
