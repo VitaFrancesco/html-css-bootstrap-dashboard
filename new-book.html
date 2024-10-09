@@ -42,7 +42,57 @@
             </div>
           </nav>
     </header>
-    
+    <main>
+        <div class="container mb-4">
+            <h1 class="py-4">Nuovo Libro</h1>
+            <form class="row row-gap-3">
+                <div class="col-6">
+                    <label class="form-label" for="name-autor"><span class="fw-semibold">Nome autore</span></label>
+                    <input class="w-100" type="text" id="name-autor" name="name-autor" placeholder="Inserisci il nome dell&#39;autore" required>
+                </div>
+                <div class="col-6">
+                    <label class="form-label" for="surname-autor"><span class="fw-semibold">Cognome autore</span></label>
+                    <input class="w-100" type="text" id="surname-autor" name="surname-autor" placeholder="Inserisci il cognome" required>
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="title-book"><span class="fw-semibold">Titolo</span></label>
+                    <input class="w-100" type="text" id="title-book" name="title-book" aria-describedby="title-help" placeholder="Inserisci il titolo del libro" required>
+                    <div class="form-text" id="title-help">Titolo versione italiana</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="genre"><span class="fw-semibold">Genere</span></label>
+                    <select name="genre" class="form-select" id="genre" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Giallo</option>
+                        <option value="2">Fantasy</option>
+                        <option value="3">Romanzo</option>
+                      </select>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="date-exit"><span class="fw-semibold">Anno di Pubblicazione</span></label>
+                    <input class="w-100" type="text" id="date-exit" name="date-exit" placeholder="Inserisci l&#39;anno" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="isbn"><span class="fw-semibold text-uppercase">isbn&#35;</span></label>
+                    <input class="w-100" type="text" id="isbn" name="isbn" placeholder="Inserisci il codice ISBN&#35;" required>
+                </div>
+                <div class="d-flex align-items-center">
+                    <hr class="w-100">
+                </div>
+                <div class="col-12">
+                    <label for="textarea-note" class="form-label"><span class="fw-semibold">Note</span></label>
+                    <textarea class="form-control" id="textarea-note" name="textarea-note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12">
+                    <input type="checkbox" class="form-check-input" id="digital" name="digital">
+                    <label class="form-check-label" for="digital"><span class="fw-semibold">Disponibile anche in digitale</span></label>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+                </div>
+            </form>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
